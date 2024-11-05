@@ -27,16 +27,47 @@ int main(){
                         chrGrid[i][j]='$';
                 }
         }
-	chrGrid[intRobotPositionX][intRobotPositionY]=' ';
 	while(intDirection>4){
-	intDirection=rand()%(intXsize);
+		intDirection=rand()%(intXsize);
 	}
 
+
+
+
 	while (intCleaned<0.95*intCleaned){
-		if(intDirection==0;
-		while
+		chrGrid[intRobotPositionX][intRobotPositionY]=' ';
 		intDirection=rand()%(intXsize);
-		chrGrid(
+
+		if (intDirection==0){
+			if(intRobotPositionY==0){
+				break;
+			}
+			else{
+				intRobotPositionY=intRobotPositionY-1;
+			}
+                if (intDirection==1){
+                        if(intRobotPositionY==intSizeY-1){
+                                break;
+                        }
+                        else{
+                                intRobotPositionY=intRobotPositionY-1;
+                        }
+                if (intDirection==2){
+                        if(intRobotPositionX==intSizeX-1){
+                                break;
+                        }
+                        else{
+                                intRobotPositionX=intRobotPositionX+1;
+                        }
+                if (intDirection==3){
+                        if(intRobotPositionX==0){
+                                break;
+                        }
+                        else{
+                                intRobotPositionX=intRobotPositionX-1;
+                        }
+
+
 
 
 
