@@ -27,16 +27,18 @@ int main(){
                         chrGrid[i][j]='$';
                 }
         }
-	while(intDirection>4){
-		intDirection=rand()%(intXsize);
-	}
+		intDirection=rand()%(4);
+	
 
 
 
 
 	while (intCleaned<0.95*intCleaned){
+		if(chrGrid[intRobotPositionX][intRobotPositionY]=='$'){
+			intCleaned++;
+		}
 		chrGrid[intRobotPositionX][intRobotPositionY]=' ';
-		intDirection=rand()%(intXsize);
+		intDirection=rand()%(4);
 
 		if (intDirection==0){
 			if(intRobotPositionY==0){
@@ -71,5 +73,7 @@ int main(){
 
 
 
+
 return 0;
 }
+
